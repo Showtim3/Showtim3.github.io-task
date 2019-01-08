@@ -1,0 +1,43 @@
+*{
+    background-color: lightcoral;
+}
+
+div h1{
+ font-size: 60px;
+ text-decoration: underline;
+ 
+}
+
+#question{
+    font-size: 60px;
+    
+    color:white;
+}
+
+div p {
+    font-family:sans-serif;
+    padding: 40px;
+    color:white;
+    font-size:25px;
+}
+
+ #options
+ {
+    font-family:sans-serif;
+    padding: 20px;
+   
+    font-size:25px;
+ }
+
+ #final{
+
+    font-family:sans-serif;
+    
+   
+    font-size:25px;
+ 
+ }
+
+ .btn-lg{
+     width:200px;
+ }

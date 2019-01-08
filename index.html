@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SAROPRE PVT LTD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <div id='intro' class="text-center">
+        <h1>Welcome to Task 1 - Quiz</h1>
+        <p>There are three questions in this Quiz.There are 4 options to each question.<br>
+        Click on <bold>SUBMIT</bold> button to submit your response.<br>
+        After that click on <bold>NEXT</bold> button to move to the next question.<br>
+        For each question the time is being noted(in Seconds).<br>
+        Click on BEGIN to start your quiz.
+        </p>
+        <button id="begin" class="btn btn-danger btn-lg">BEGIN</button>
+    </div>
+    
+    <div id='quiz' class="text-center">
+    <p id='question'></p>
+        <div id = 'options' class="toggle" style="display: none">
+        <input type='radio' name='options' value='A' id='option1'>A: Option 1
+        <input type='radio' name='options' value='B' id='option2'>B: Option 2
+        <input type='radio' name='options' value='C' id='option3'>C: Option 3
+        <input type='radio' name='options' value='D' id='option4'>D: Option 4
+        </div>
+    
+
+        <div class="toggle" style="display: none">
+        <button id='submit' class="btn btn-warning btn-lg">Submit</button>
+        <button id='next' class="btn btn-danger btn-lg">Next</button>
+        </div>
+    </div>
+
+
+    <h1 id='output'></h1>
+    <p id='final'></p>
+</body>
+</html>
