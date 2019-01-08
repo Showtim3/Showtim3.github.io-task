@@ -55,7 +55,7 @@ function handle(){
     
     timeStamp.push($.now());
     question.append('Q'+response.questions[ques].id+') '+response.questions[ques].statment);
-    toggle.css("display","block");
+    toggle.css("display","block");//making the radiobuttons and other buttons visible
     ques++;
    
 }
@@ -76,7 +76,7 @@ submitButton.click(function(){
 nextButton.click(function(){
     if(ques<=2)
     {
-        question.empty();
+        question.empty(); //clearing out the previous question
         $('input[name=options]').prop('checked',false); //making the radioboxes cleared out for the next question
         handle();
     }
@@ -89,7 +89,7 @@ nextButton.click(function(){
         }
 
         var obj1={answers:arr};
-        var finalAns=JSON.stringify(obj1);//converting user's choices to appropriate format
+        var finalAns=JSON.stringify(obj1);//converting user's choices to appropriate JSON format
         
         $('#quiz').remove();
         $('#output').append("OUTPUT :");
