@@ -40,7 +40,7 @@ $(document).ready(function(){
         })
     }
 
-    
+    //just a utlility function to store api data to a global variable
 function store(data)
 {   if(bool==false)
     {
@@ -50,7 +50,7 @@ function store(data)
 
 }
 
-
+//the function where DOM manipulation is taking place.
 function handle(){
     
     timeStamp.push($.now());
@@ -77,7 +77,7 @@ nextButton.click(function(){
     if(ques<=2)
     {
         question.empty();
-        $('input[name=options]').prop('checked',false);
+        $('input[name=options]').prop('checked',false); //making the radioboxes cleared out for the next question
         handle();
     }
     else 
@@ -89,7 +89,7 @@ nextButton.click(function(){
         }
 
         var obj1={answers:arr};
-        var finalAns=JSON.stringify(obj1);
+        var finalAns=JSON.stringify(obj1);//converting user's choices to appropriate format
         
         $('#quiz').remove();
         $('#output').append("OUTPUT :");
